@@ -1,6 +1,9 @@
 .input_page {
     display: flex;
-    text-align: center;
+    flex-grow: 1;
     flex-direction: column;
+    align-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
