@@ -1,0 +1,12 @@
+.canvas_page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas {
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin: 10px;
+}

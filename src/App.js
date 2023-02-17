@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {InputPage} from "./pages/input/InputPage";
+import {Root} from "./pages/root/Root";
+import {CanvasPage} from "./pages/canvas/CanvasPage";
+import {useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [name, setName] = useState("nameless")
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Root/>
+        },
+        {
+            path: "/input",
+            element: <InputPage setName={setName}/>
+        },
+        {
+            path: "/canvas",
+            element: <CanvasPage name={name}/>
+        }
+    ])
+    return (
+        <div className="App">
+            <RouterProvider router={router}/>
+        </div>
+    );
 }
 
 export default App;

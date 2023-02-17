@@ -1,0 +1,9 @@
+.input {
+    border: 1px solid gray;
+    border-radius: 10px;
+    flex-grow: 1;
+    padding: 7px;
+    margin: 10px;
+    width: 89%;
+    font-family: "Nanum Gothic Coding", serif
+}

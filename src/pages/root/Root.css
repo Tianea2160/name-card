@@ -1,0 +1,15 @@
+.root {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    margin: 40px;
+    font-family: Comfortaa, serif;
+}
